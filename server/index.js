@@ -41,7 +41,7 @@ const privateKey =
 const alchemyProvider = new JsonRpcProvider(
   "https://rpc.basecamp.t.raas.gelato.cloud"
 );
-const contractAddress = "0x254147C7C0a9BB490b4499c839F6a5f5DefB17DB";
+const contractAddress = "0x192690c260b80dCeFb40Ec847b45AfE13eA43Ff0";
 
 // console.log(abi.abi)
 const signer = new ethers.Wallet(privateKey, alchemyProvider);

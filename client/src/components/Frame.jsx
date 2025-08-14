@@ -35,24 +35,19 @@ export function Frame({ imgLink, rotation, item, ...props }) {
           />
   
           {/* Show "For Auction" text if auctionActive is true */}
-          {item.auctionActive && (
-            <mesh
-              position={[0, 0.1, 0.1]} // Position above the frame
-              rotation={[Math.PI*1.5, 0,0]} // Adjust the rotation as necessary
-            >
-              {/* <planeBufferGeometry args={[1, 0.5]} /> Adjust size */}
-              <Text
-                position={[0, 1, 0]} // Slightly in front of the plane
-                fontSize={0.5} // Font size of the text
-                color="red" // Text color
-                anchorX="center" // Center alignment
-                anchorY="middle" // Middle alignment
-                bold // Bold text
-              >
-                For Auction
-              </Text>
-            </mesh>
-          )}
+{item.auctionActive && (
+  <Text
+    position={[0.285, 0.5, -0.65]}
+    rotation={[-Math.PI / 2, 0, 0]}
+    fontSize={0.18}
+    color="#ffffff"
+    anchorX="center"
+    anchorY="middle"
+    fontWeight="bold"
+  >
+    LIVE AUCTION
+  </Text>
+)}
         </group>
       </group>
     )

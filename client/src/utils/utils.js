@@ -1,7 +1,7 @@
 import NftGallery from '../abi/NFTGallery.json';
 
 
-export const contractAddress = "0x254147C7C0a9BB490b4499c839F6a5f5DefB17DB";
+export const contractAddress = "0x192690c260b80dCeFb40Ec847b45AfE13eA43Ff0";
 export const contractABI = NftGallery.abi;
 
 // function Names
